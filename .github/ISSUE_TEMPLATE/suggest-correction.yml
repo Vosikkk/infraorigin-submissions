@@ -1,0 +1,109 @@
+{
+  "name": "Suggest Correction",
+  "description": "Report an inaccurate or outdated field with a dated public source.",
+  "title": "[Correction] ",
+  "body": [
+    {
+      "type": "markdown",
+      "attributes": {
+        "value": "## Public submission — human review required\nYour GitHub identity, text and attachments will be public. Never include passwords, tokens, SSH keys, production access, private server addresses, customer data or unredacted bills/logs. We do not need server access. Opening this issue does not publish a Stack or verify a claim. See [moderation and evidence standards](https://github.com/Vosikkk/runahomelab-stacks/blob/main/MODERATION.md)."
+      }
+    },
+    {
+      "type": "input",
+      "id": "stack",
+      "attributes": {
+        "label": "Stack URL",
+        "description": "The published Stack or operator page."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "dropdown",
+      "id": "scope",
+      "attributes": {
+        "label": "Claim affected",
+        "description": "Which part needs review?",
+        "options": [
+          "Authorship",
+          "Configuration",
+          "Cost",
+          "Performance",
+          "Source freshness",
+          "Attribution / permission",
+          "Other"
+        ]
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "current",
+      "attributes": {
+        "label": "Current statement and issue",
+        "description": "Quote the specific field and explain what is inaccurate, outdated or unsupported. Do not copy sensitive data."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "replacement",
+      "attributes": {
+        "label": "Proposed correction",
+        "description": "State the corrected fact, or request marking it unknown while the dispute is reviewed."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "evidence",
+      "attributes": {
+        "label": "Dated source and method",
+        "description": "Public HTTPS source(s), source date, what they show, and how you verified them. Explain differing workload/cost periods where relevant."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "relationship",
+      "attributes": {
+        "label": "Your relationship to the Stack",
+        "description": "Operator, reader, vendor or other. Disclose conflicts."
+      },
+      "validations": {
+        "required": false
+      }
+    },
+    {
+      "type": "checkboxes",
+      "id": "permission",
+      "attributes": {
+        "label": "Public submission and permission",
+        "options": [
+          {
+            "label": "I reviewed this submission for credentials, private server/customer data and unredacted sensitive attachments.",
+            "required": true
+          },
+          {
+            "label": "I am authorized to share this text and the linked material publicly, and permit RunAHomeLab to publish the reviewed public facts with attribution.",
+            "required": true
+          },
+          {
+            "label": "I understand all claims require human review, and operator identity does not automatically verify cost or performance.",
+            "required": true
+          }
+        ]
+      }
+    }
+  ]
+}

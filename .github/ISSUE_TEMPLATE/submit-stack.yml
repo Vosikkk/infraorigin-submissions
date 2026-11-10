@@ -1,0 +1,152 @@
+{
+  "name": "Submit Stack",
+  "description": "Propose a real infrastructure case for manual moderation.",
+  "title": "[Stack] ",
+  "body": [
+    {
+      "type": "markdown",
+      "attributes": {
+        "value": "## Public submission — human review required\nYour GitHub identity, text and attachments will be public. Never include passwords, tokens, SSH keys, production access, private server addresses, customer data or unredacted bills/logs. We do not need server access. Opening this issue does not publish a Stack or verify a claim. See [moderation and evidence standards](https://github.com/Vosikkk/runahomelab-stacks/blob/main/MODERATION.md)."
+      }
+    },
+    {
+      "type": "input",
+      "id": "operator",
+      "attributes": {
+        "label": "Operator and public profile",
+        "description": "Display name and an HTTPS profile/repository/site. State whether you operate the system or are proposing a public-source case."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "name",
+      "attributes": {
+        "label": "Stack name",
+        "description": "A short descriptive name."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "dropdown",
+      "id": "infrastructure",
+      "attributes": {
+        "label": "Infrastructure type",
+        "description": "Choose the closest fit.",
+        "options": [
+          "Homelab",
+          "VPS",
+          "Self-hosting",
+          "AI / GPU",
+          "Hybrid",
+          "Other"
+        ]
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "workload",
+      "attributes": {
+        "label": "Workload and results",
+        "description": "What actually runs, for whom, over what period, and what does it achieve? Distinguish observed results from expectations."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "configuration",
+      "attributes": {
+        "label": "Hardware and software",
+        "description": "Models, quantities, RAM/storage, OS/hypervisor/app versions, relevant deployment context. Omit private addresses and access details."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "cost",
+      "attributes": {
+        "label": "Costs and cost evidence",
+        "description": "Use unknown if unavailable. Otherwise include currency, date/period, country, taxes/shipping, included/excluded items, and a redacted public source. Separate purchase costs from recurring bills."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "performance",
+      "attributes": {
+        "label": "Performance and method",
+        "description": "Use unknown if unavailable. Otherwise provide workload/input, tools/versions, measurement window, conditions, limits and public results. Label operator reports versus independent measurements."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "limits",
+      "attributes": {
+        "label": "Limitations and tradeoffs",
+        "description": "Known bottlenecks, outages, unsuccessful choices, constraints or missing information."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "sources",
+      "attributes": {
+        "label": "Dated public sources and claim mapping",
+        "description": "List HTTPS sources, dates, what each supports (authorship/configuration/cost/performance), who produced them and how. Public-source cases require a usable source. Unknown facts are acceptable."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "relationship",
+      "attributes": {
+        "label": "Authorship, attribution and conflicts",
+        "description": "How are you connected to this Stack? Who should be credited? Disclose vendor/sponsor/affiliate relationships. If it is not yours, identify the original public source and publication permission basis."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "checkboxes",
+      "id": "permission",
+      "attributes": {
+        "label": "Public submission and permission",
+        "options": [
+          {
+            "label": "I reviewed this submission for credentials, private server/customer data and unredacted sensitive attachments.",
+            "required": true
+          },
+          {
+            "label": "I am authorized to share this text and the linked material publicly, and permit RunAHomeLab to publish the reviewed public facts with attribution.",
+            "required": true
+          },
+          {
+            "label": "I understand all claims require human review, and operator identity does not automatically verify cost or performance.",
+            "required": true
+          }
+        ]
+      }
+    }
+  ]
+}

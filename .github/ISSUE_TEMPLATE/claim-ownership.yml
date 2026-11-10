@@ -1,0 +1,89 @@
+{
+  "name": "Claim Ownership",
+  "description": "Ask a moderator to confirm control and authorship for an existing Stack.",
+  "title": "[Ownership] ",
+  "body": [
+    {
+      "type": "markdown",
+      "attributes": {
+        "value": "## Public submission — human review required\nYour GitHub identity, text and attachments will be public. Never include passwords, tokens, SSH keys, production access, private server addresses, customer data or unredacted bills/logs. We do not need server access. Opening this issue does not publish a Stack or verify a claim. See [moderation and evidence standards](https://github.com/Vosikkk/runahomelab-stacks/blob/main/MODERATION.md)."
+      }
+    },
+    {
+      "type": "input",
+      "id": "stack",
+      "attributes": {
+        "label": "Stack URL",
+        "description": "The https://runahomelab.com/stacks/.../ page you are claiming."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "profile",
+      "attributes": {
+        "label": "Operator-controlled public profile",
+        "description": "A website/repository/profile already linked by this Stack or its original dated source."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "statement",
+      "attributes": {
+        "label": "Authorship statement and scope",
+        "description": "State which Stack you operate and which facts you explicitly confirm. Identity confirmation alone does not verify financial or performance claims."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "proof",
+      "attributes": {
+        "label": "Reciprocal public proof",
+        "description": "After creating this issue, publish a link to THIS issue with your authorship statement on the operator-controlled public source, then update this field/comment with the proof URL. Enter “proof link pending” initially if necessary. No credentials or server access."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "changes",
+      "attributes": {
+        "label": "Requested attribution or factual changes",
+        "description": "Optional changes. Include separate dated evidence for configuration, cost or performance."
+      },
+      "validations": {
+        "required": false
+      }
+    },
+    {
+      "type": "checkboxes",
+      "id": "permission",
+      "attributes": {
+        "label": "Public submission and permission",
+        "options": [
+          {
+            "label": "I reviewed this submission for credentials, private server/customer data and unredacted sensitive attachments.",
+            "required": true
+          },
+          {
+            "label": "I am authorized to share this text and the linked material publicly, and permit RunAHomeLab to publish the reviewed public facts with attribution.",
+            "required": true
+          },
+          {
+            "label": "I understand all claims require human review, and operator identity does not automatically verify cost or performance.",
+            "required": true
+          }
+        ]
+      }
+    }
+  ]
+}
