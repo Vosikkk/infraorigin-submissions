@@ -6,7 +6,7 @@
     {
       "type": "markdown",
       "attributes": {
-        "value": "## Public submission — human review required\nYour GitHub identity, text and attachments will be public. Never include passwords, tokens, SSH keys, production access, private server addresses, customer data or unredacted bills/logs. We do not need server access. Opening this issue does not publish a Stack or verify a claim. See [moderation and evidence standards](https://github.com/Vosikkk/runahomelab-stacks/blob/main/MODERATION.md)."
+        "value": "## Public submission — human review required\nYour GitHub identity, text and attachments will be public. Never include passwords, tokens, SSH keys, production access, private server addresses, customer data or unredacted bills/logs. We do not need server access. Opening this issue does not publish a Stack or verify a claim. See [moderation and evidence standards](https://github.com/Vosikkk/infraorigin-submissions/blob/main/MODERATION.md)."
       }
     },
     {
@@ -95,7 +95,7 @@
             "required": true
           },
           {
-            "label": "I am authorized to share this text and the linked material publicly, and permit RunAHomeLab to publish the reviewed public facts with attribution.",
+            "label": "I am authorized to share this text and the linked material publicly, and permit InfraOrigin to publish the reviewed public facts with attribution.",
             "required": true
           },
           {

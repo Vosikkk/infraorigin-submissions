@@ -1,10 +1,10 @@
-# RunAHomeLab Stacks — public intake
+# InfraOrigin public intake
 
-Share a real infrastructure configuration, claim authorship or correct a record. This repository is the public intake channel; the website source remains private. A GitHub account is required to submit an issue. **All issue text, identity and attachments are public.**
+Share a real infrastructure configuration, claim authorship or correct a record for [InfraOrigin](https://infraorigin.pages.dev/). This repository is the public intake channel; the website source remains private. A GitHub account is required to submit an issue. **All issue text, identity and attachments are public.**
 
-- [Submit Stack](https://github.com/Vosikkk/runahomelab-stacks/issues/new?template=submit-stack.yml)
-- [Claim Ownership](https://github.com/Vosikkk/runahomelab-stacks/issues/new?template=claim-ownership.yml)
-- [Suggest Correction](https://github.com/Vosikkk/runahomelab-stacks/issues/new?template=suggest-correction.yml)
+- [Submit Stack](https://github.com/Vosikkk/infraorigin-submissions/issues/new?template=submit-stack.yml)
+- [Claim Ownership](https://github.com/Vosikkk/infraorigin-submissions/issues/new?template=claim-ownership.yml)
+- [Suggest Correction](https://github.com/Vosikkk/infraorigin-submissions/issues/new?template=suggest-correction.yml)
 
 Describe what runs, why, and what the evidence supports. Unknown costs or performance are acceptable. Do not invent measurements or imply independent testing of operator-reported results.
 
